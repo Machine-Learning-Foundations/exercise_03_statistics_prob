@@ -19,7 +19,7 @@ def twod_gaussian_pdf(x: np.ndarray, mu: np.ndarray, sigma: np.ndarray) -> np.nd
     Returns:
         np.ndarray: The two dimensional gaussian distribution.
     """
-    # TODO: Implement me.
+    # TODO: 3.3 Implement me.
     return np.zeros_like(x)
 
 
@@ -66,6 +66,8 @@ def fit_gmm(points: np.ndarray, init_params_list: List) -> List:
 
 if __name__ == "__main__":
     np.random.seed(42)
+    #--------------------------------------------------------------------------------------#
+    
     dist1 = np.random.normal(loc=(2, 2), scale=(1.0, 1.0), size=(100, 2))
     dist2 = np.random.normal(loc=(-2, -2), scale=(1.0, 1.0), size=(100, 2))
 

@@ -10,13 +10,13 @@ import pandas
 
 def my_mean(data_sample) -> float:
     """Implement a function to find the mean of an input List."""
-    # TODO: Implement me.
+    # TODO: 1.1 Implement me.
     return 0.
 
 
 def my_std(data_sample) -> float:
     """Implement a function to find the standard deviation of a sample in a List."""
-    # TODO: Implement me.
+    # TODO: 1.2 Implement me.
     return 0.
 
 
@@ -29,7 +29,8 @@ def auto_corr(x: np.ndarray) -> np.ndarray:
     Returns:
         np.ndarray: Autocorrelation of input signal of shape (signal_length*2 - 1,).
     """
-    # TODO: Implement me.
+    # TODO: 2.1 Implement me.
+    # TODO: 2.2 Check your implementation via nox -s test.
     return np.zeros_like(x)
 
 
@@ -57,6 +58,14 @@ if __name__ == "__main__":
     ]
 
 
-    # TODO: compute the mean and standard deviation before and after 2000.
+    # TODO: 1.3 Compute the mean and standard deviation before 2000.
+    # TODO: 1.4 Compute the mean and standatd deviation after 2000.
 
-    # TODO: Compare the autocorrelation functions of the rhine data and of a random signal.
+    #----------------------------------------------------------------------------------------------#
+    # TODO: 2.3 Normalize the data of the Rhine level measurements since 2000.
+    # TODO: 2.4 Compute and plot the autocorrelation.
+
+    # TODO: 2.5 Create a random signal.
+    # TODO: 2.6 Normalize the random signal.
+    # TODO: 2.7 Compute the autocorrelation.
+    # TODO: 2.8. Plot both autocorrelations and compare the results.

@@ -45,12 +45,15 @@ def forward_euler(x: np.ndarray, fun: Callable, int_0: float = 0.0) -> np.ndarra
 
 
 if __name__ == "__main__":
-    params = (
+    # 3.2 Explore the behavior of tha gaussian pdf by trying out different parameter values
+    params = ( # each parameter-tuple contains a mean and a std: (mu, std)
         (0.0, np.sqrt(0.2)),
         (0.0, np.sqrt(1.0)),
         (0.0, np.sqrt(5.0)),
         (-2.0, np.sqrt(0.5)),
     )
+
+    # Plot the gaussian pdfs for the different parameters specified above
     for param in params:
         x = np.linspace(-5.0, 5.0, 500)
         plt.plot(
