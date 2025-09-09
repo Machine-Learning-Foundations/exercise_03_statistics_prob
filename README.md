@@ -42,7 +42,7 @@ with $n$ the normalized version of your signal of length $N$. The time shift $k$
 
 For example the autocorrelation of an input signal $x=(2,3,-1)$ is $R_{xx}=(c_{-2}, c_{-1}, c_0, c_1, c_2)=(-2, 3, 14, 3, -2)$ and is symmetrical.
 
->>> In the following table you can see an illustrative depicition on how the $c_k$'s are calculated.
+>> In the following table you can see an illustrative depicition on how the $c_k$'s are calculated.
 The header contains the input signal x padded with 0's on its sides.
 For autocorrelation, we compute correlation between $x$ and $x$ itself.
 So in visual terms, we slide $x$ from left to right across itself. 
@@ -55,11 +55,11 @@ At each step we compute one $c_k$ by first multiplying the numbers that are alig
 | | | 2  | 3 | -1 | | | 4 + 9 + 1 = 14
 | | | | 2  | 3 | -1 | | 6 - 3 + 0 = 3
 | | | | | 2  | 3 | -1 | -2 + 0 + 0 = -2
->>>As you can see, when reading from top to bottom we get the correct solution $R_{xx}=(-2, 3, 14, 3, -2)$.
+>> As you can see, when reading from top to bottom we get the correct solution $R_{xx}=(-2, 3, 14, 3, -2)$.
 
 So here are your tasks:
 1. Implement the `auto_corr` function as described above. 
-    >>> The function expects $x$ to be normalized. That means, that no normalization is done inside the `auto_corr`-function. Instead you normalize the input signal before calling `auto_corr`.
+    >> The function expects $x$ to be normalized. That means, that no normalization is done inside the `auto_corr`-function. Instead you normalize the input signal before calling `auto_corr`.
 2. Check your implementation using `nox -s test`.
     If the test passes you can use `np.correlate` for efficiency in the following exercises!
 
@@ -89,7 +89,7 @@ Now we want to compare this autocorrelation to the one of a random signal.
     $\pi \in \mathbb{R}$ denotes Pi, $\mu \in \mathbb{R}$ the mean and $\sigma \in \mathbb{R}$ the standard deviation for a random variable $X$. 
     $e^x$ denotes the exponential function. 
     A random variable $X$ having a gaussian pdf is described as gaussion or normal distribution $\mathcal{N}$.
-    >>> Remark: In the notation $\phi_1(x | \mu, \sigma)$, x is the variable that is plugged into the function and $\mu$ and $\sigma$ are parameters which are needed to define the function and that are determined beforehand.
+    >> Remark: In the notation $\phi_1(x | \mu, \sigma)$, x is the variable that is plugged into the function and $\mu$ and $\sigma$ are parameters which are needed to define the function and that are determined beforehand.
 2. Explore the behavior of $\mathcal{N}(\mu, \sigma)$ for different values of $\mu$ and $\sigma$.
   The Code for plotting the pdf's is already given.
 
